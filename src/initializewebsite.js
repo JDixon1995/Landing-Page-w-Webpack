@@ -14,5 +14,27 @@ export function initializeWebsite() {
         pageContent.appendChild(button3);
     }
 
+    function makeMainDiv() {
+        const mainDiv = document.createElement('div');
+        mainDiv.id = 'mainDiv';
+
+        const resName = document.createElement('h1');
+        resName.innerText = 'Our Restaurant';
+
+        const pageContent = document.getElementById('content');
+        pageContent.appendChild(mainDiv);
+        pageContent.appendChild(resName);
+    }
+
+    function blurbForMainDiv() {
+        const blurb = document.createElement('p');
+        blurb.innerText = 'Thank you for your interest in Our Restaurant.'
+
+        const pageContent = document.getElementById('content');
+        pageContent.appendChild(blurb);
+    }
+
     makeButtons();
+    makeMainDiv();
+    blurbForMainDiv();
 }

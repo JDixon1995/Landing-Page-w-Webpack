@@ -24,9 +24,22 @@ button:hover {
     cursor: pointer;
 }
 
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+p {
+    color: white;
+}
+
 #content {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+#mainDiv {
+    background-image: linear-gradient(grey to grey);
 }
