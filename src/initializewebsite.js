@@ -1,6 +1,8 @@
 export function initializeWebsite() {
     function makeButtons() {
 
+        const btnDiv = document.createElement('div');
+        btnDiv.id = 'btnDiv';
         const button1 = document.createElement('button');
         button1.innerText = 'Home';
         const button2 = document.createElement('button');
@@ -8,10 +10,12 @@ export function initializeWebsite() {
         const button3 = document.createElement('button');
         button3.innerText = 'About';
 
+        btnDiv.appendChild(button1);
+        btnDiv.appendChild(button2);
+        btnDiv.appendChild(button3);
+
         const pageContent = document.getElementById('content');
-        pageContent.appendChild(button1);
-        pageContent.appendChild(button2);
-        pageContent.appendChild(button3);
+        pageContent.appendChild(btnDiv);
     }
 
     function makeMainDiv() {

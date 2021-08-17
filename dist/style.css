@@ -6,9 +6,11 @@
 
 body {
     background-image: linear-gradient(grey to black);
+    background-image: linear-gradient(from top, to bottom, rgba(3, 1, 1, 0.938), rgba(0, 0, 0, .75));
     background-image: url('../restaurant.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 button {
@@ -25,21 +27,31 @@ button:hover {
 }
 
 h1 {
-    color: white;
+    color: black;
     font-size: 3rem;
+    text-align: center;
+    margin: 3rem;
 }
 
 p {
-    color: white;
+    color: black;
+    text-align: center;
+    margin: 3rem;
 }
 
 #content {
+    width: 50vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: rgb(172, 16, 16, .40);
+    border:2px solid black;
+    margin: auto;
 }
 
-#mainDiv {
-    background-image: linear-gradient(grey to grey);
+#btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
