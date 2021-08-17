@@ -8,12 +8,15 @@ export function initializeWebsite() {
         const button1 = document.createElement('button');
         button1.innerText = 'Home';
         button1.id = 'homeBtn';
+        button1.onclick = console.log('homebtn clicked.');
         const button2 = document.createElement('button');
         button2.innerText = 'Menu';
         button2.id = 'menuBtn';
+        button2.onclick = console.log('munebtn clicked.');
         const button3 = document.createElement('button');
         button3.innerText = 'About';
         button3.id = 'aboutBtn';
+        button3.onclick = console.log('aboutbtn clicked.');
 
         btnDiv.appendChild(button1);
         btnDiv.appendChild(button2);
@@ -21,6 +24,7 @@ export function initializeWebsite() {
 
         const pageContent = document.getElementById('content');
         pageContent.appendChild(btnDiv);
+
 
     }
 
