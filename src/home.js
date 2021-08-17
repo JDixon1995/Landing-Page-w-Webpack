@@ -1,4 +1,3 @@
-export function homePage() {
 
     function clearContentDiv() {
         contentDiv = document.getElementById('content');
@@ -23,5 +22,4 @@ export function homePage() {
         contentDiv.appendChild(homeInfo);
 
     }
-
-}
+module.exports = { clearContentDiv, writeHomeInfo };
