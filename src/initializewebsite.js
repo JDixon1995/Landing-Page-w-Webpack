@@ -1,3 +1,5 @@
+import { homePage } from "./home";
+
 export function initializeWebsite() {
     function makeButtons() {
 
@@ -5,10 +7,13 @@ export function initializeWebsite() {
         btnDiv.id = 'btnDiv';
         const button1 = document.createElement('button');
         button1.innerText = 'Home';
+        button1.id = 'homeBtn';
         const button2 = document.createElement('button');
         button2.innerText = 'Menu';
+        button2.id = 'menuBtn';
         const button3 = document.createElement('button');
         button3.innerText = 'About';
+        button3.id = 'aboutBtn';
 
         btnDiv.appendChild(button1);
         btnDiv.appendChild(button2);
@@ -16,6 +21,7 @@ export function initializeWebsite() {
 
         const pageContent = document.getElementById('content');
         pageContent.appendChild(btnDiv);
+
     }
 
     function makeMainDiv() {
