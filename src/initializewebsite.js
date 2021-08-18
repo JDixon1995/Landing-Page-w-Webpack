@@ -1,4 +1,4 @@
-import { clearContentDiv, writeHomeInfo } from "./home";
+import { clearContentDiv, writeAboutInfo } from "./about";
 
 export function initializeWebsite() {
     function makeButtons() {
@@ -10,7 +10,10 @@ export function initializeWebsite() {
         button1.innerText = 'Home';
         button1.id = 'homeBtn';
         button1.addEventListener('click', function() {
-            console.log('Home button clicked.');
+            clearContentDiv();
+            makeButtons();
+            makeMainDiv();
+            blurbForMainDiv();
         });
 
         const button2 = document.createElement('button');
@@ -24,7 +27,9 @@ export function initializeWebsite() {
         button3.innerText = 'About';
         button3.id = 'aboutBtn';
         button3.addEventListener('click', function() {
-            console.log('About button clicked.');
+            clearContentDiv();
+            makeButtons();
+            writeAboutInfo();
         });
 
         btnDiv.appendChild(button1);

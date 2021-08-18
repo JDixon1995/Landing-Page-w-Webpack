@@ -34,6 +34,13 @@ h1 {
     margin: 3rem;
 }
 
+h3 {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin: 3rem;
+}
+
 p {
     color: black;
     text-align: center;
