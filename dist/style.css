@@ -36,15 +36,21 @@ h1 {
 
 h3 {
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin: 3rem;
+    margin: 1.5rem;
 }
 
 p {
     color: black;
     text-align: center;
+    font-size: 1.5rem;
     margin: 3rem;
+}
+
+article {
+    font-size: 1rem;
+    margin: 1rem;
 }
 
 #content {

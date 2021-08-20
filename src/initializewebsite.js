@@ -1,4 +1,5 @@
 import { clearContentDiv, writeAboutInfo } from "./about";
+import { writeMenuData } from "./menu";
 
 export function initializeWebsite() {
     function makeButtons() {
@@ -20,7 +21,9 @@ export function initializeWebsite() {
         button2.innerText = 'Menu';
         button2.id = 'menuBtn';
         button2.addEventListener('click', function() {
-            console.log('Menu button clicked.');
+            clearContentDiv();
+            makeButtons();
+            writeMenuData();
         });
         
         const button3 = document.createElement('button');
