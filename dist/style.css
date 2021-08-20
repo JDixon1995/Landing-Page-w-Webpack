@@ -38,7 +38,7 @@ h3 {
     color: black;
     font-size: 1.5rem;
     text-align: center;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 p {
@@ -51,6 +51,14 @@ p {
 article {
     font-size: 1rem;
     margin: 1rem;
+    width: 25rem;
+    text-align: left;
+}
+
+img {
+    height: 80px;
+    width: 100px;
+    float: right;
 }
 
 #content {
