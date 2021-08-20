@@ -12,12 +12,12 @@ function writeMenuData() {
     menuItem1.appendChild(menuItem1Pic);
 
     const menuItem2 = document.createElement('h3');
-    menuItem2.innerText = 'Caesar Salad';
+    menuItem2.innerText = 'American Cheeseburger';
     const menuItem2Pic = document.createElement('img');
-    menuItem2Pic.setAttribute('src', '../src/salad.jpg');
+    menuItem2Pic.setAttribute('src', '../src/burger.jpg');
     const menuItem2Blurb = document.createElement('article');
-    menuItem2Blurb.innerText = 'Served with your choice of 1000 Island,' +
-    ' Ranch, or Honey Mustard dressing, this one for your health-conscious friends.';
+    menuItem2Blurb.innerText = 'An American classic, served in 1/4lb, or'
+    + ' 1/2lb patties.';
     menuItem2.appendChild(menuItem2Blurb);
     menuItem2.appendChild(menuItem2Pic);
 
@@ -31,20 +31,9 @@ function writeMenuData() {
     menuItem3.appendChild(menuItem3Blurb);
     menuItem3.appendChild(menuItem3Pic);
 
-    const menuItem4 = document.createElement('h3');
-    menuItem4.innerText = 'American Cheeseburger';
-    const menuItem4Pic = document.createElement('img');
-    menuItem4Pic.setAttribute('src', '../src/burger.jpg');
-    const menuItem4Blurb = document.createElement('article');
-    menuItem4Blurb.innerText = 'An American classic, served in 1/4lb, or'
-    + ' 1/2lb patties.';
-    menuItem4.appendChild(menuItem4Blurb);
-    menuItem4.appendChild(menuItem4Pic);
-
     contentDiv.appendChild(menuItem1);
     contentDiv.appendChild(menuItem2);
     contentDiv.appendChild(menuItem3);
-    contentDiv.appendChild(menuItem4);
 }
 
 module.exports = { writeMenuData };

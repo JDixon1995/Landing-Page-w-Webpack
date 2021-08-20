@@ -49,17 +49,20 @@ export function initializeWebsite() {
         const mainDiv = document.createElement('div');
         mainDiv.id = 'mainDiv';
 
+        const welcome = document.createElement('h4');
+        welcome.innerText = 'Welcome to';
         const resName = document.createElement('h1');
         resName.innerText = 'Our Restaurant';
 
         const pageContent = document.getElementById('content');
         pageContent.appendChild(mainDiv);
+        pageContent.appendChild(welcome);
         pageContent.appendChild(resName);
     }
 
     function blurbForMainDiv() {
         const blurb = document.createElement('p');
-        blurb.innerText = 'Thank you for your interest in Our Restaurant.'
+        blurb.innerText = "'Where the staff is like family.'"
 
         const pageContent = document.getElementById('content');
         pageContent.appendChild(blurb);
